@@ -83,14 +83,15 @@ The server will run at: `http://localhost:5000`
 
 | Method | Endpoint                   | Description                      |
 |--------|----------------------------|----------------------------------|
-| POST   | `/api/auth/register`      | Register a new user              |
-| POST   | `/api/auth/login`         | User login                       |
-| POST   | `/api/auth/forgot-password` | Send password reset email       |
-| POST   | `/api/auth/reset-password` | Reset user password              |
-| POST   | `/api/alerts/notify`      | Send real-time email alert       |
-| GET    | `/api/cases`              | Get all cases (based on role)    |
-| POST   | `/api/cases`              | Submit a new case report         |
-| PUT    | `/api/cases/:id`          | Update case (lawyer/admin)       |
+| POST   | `/api/user/signup`      | Register a new user              |
+| POST   | `/api/user/signin`         | User login                       |
+| GET   | `/api/crimeReport/all` | Get criminal report's based on Role criminal report's       |
+| POST   | `/api/crimeReport/registerCrime` | Register/Add new crime              |
+| PUT   | `/api/crimeReport/updateReport/:id`      | Update/edit case report       |
+| GET    | `/api/witness/add/:id`              | Get witness based on caseID    |
+| POST   | `/api/witness/addWitness/:id`              | Add a new case witness         |
+| PUT    | `/api/witness/updateWitness/:id`          | Update witness      |
+| DELETE    | `/api/witness/deleteWitness/:id`          | Delete witness      |
 
 > All sensitive routes are secured via JWT middleware.
 
