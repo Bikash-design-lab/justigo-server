@@ -66,6 +66,7 @@ CrimeReport Schema:-
   createdAt,
   updatedAt
 }
+
 Example: {
   "reportedBy": "68077faac765d21087f1f306",
   "incidentType": "Assault",
