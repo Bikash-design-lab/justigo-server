@@ -4,13 +4,13 @@ require("dotenv").config()
 const { UserModel } = require("../Models/user.model")
 const UserRouter = express.Router()
 
-const nodemailer = require("nodemailer")
+// const nodemailer = require("nodemailer")
 
 const bcrypt = require("bcrypt")
 const saltRounds = 10
 const jwt = require("jsonwebtoken")
 
-UserRouter.get("/u",async(req,res)=>{
+UserRouter.get("/healthy",async(req,res)=>{
     res.send("user router test passed.")
 })
 
@@ -54,6 +54,10 @@ UserRouter.post("/signin", async(req,res)=>{
 })
 
 
+
+module.exports = {UserRouter}
+
+
 // UserRouter.post("/reset-password", async(req,res)=>{
 //     try {
 
@@ -80,6 +84,3 @@ UserRouter.post("/signin", async(req,res)=>{
 //         return res.status(500).json({message:"Something went wrong while makeing reset-password req.",error})
 //     }
 // })
-
-
-module.exports = {UserRouter}

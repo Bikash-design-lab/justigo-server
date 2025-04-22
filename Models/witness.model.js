@@ -17,15 +17,5 @@ module.exports = { WitnessModel };
 
 
 
-// Witness Schema:-
-// {
-//   _id,
-//   crimeId: ObjectId,
-//   name,
-//   statement,
-//   contactInfo,
-//   isAnonymous: Boolean
-// }
-
 
 

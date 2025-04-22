@@ -18,17 +18,3 @@ const UserModel = mongoose.model("Users", userSchema);
 
 module.exports = { UserModel };
 
-
-// {
-//     _id,
-//     name,
-//     email,
-//     password,
-//     role: "citizen" | "lawyer" | "admin",
-//     contactInfo,
-//     contactNo,
-//     location,
-//     isAnonymous: Boolean,
-//     createdAt,
-//     updatedAt
-//   }

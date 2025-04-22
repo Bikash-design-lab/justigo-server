@@ -6,7 +6,7 @@ const { CrimeReportModel } = require("../Models/crimeReport.model")
 
 const CrimeReportRouter = express.Router()
 
-CrimeReportRouter.get("/cr",(req,res)=>{
+CrimeReportRouter.get("/healthy",(req,res)=>{
     res.send("crimeReport test passed")
 })
 
