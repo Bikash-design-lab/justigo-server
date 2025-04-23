@@ -1,7 +1,7 @@
 const express = require("express")
 const { AuthenticationMW } = require("../Middleware/Auth.middleware")
 const { UserModel } = require("../Models/user.model")
-const {CrimeReportModel} = require("../Models/CrimeReport.model")
+const {CrimeReportModel} = require("../Models/crimeReport.model" || "../Models/CrimeReport.model" )
 const CrimeReportRouter = express.Router()
 CrimeReportRouter.get("/healthy",(req,res)=>{
     res.send("crimeReport test passed")
