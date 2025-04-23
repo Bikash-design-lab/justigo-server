@@ -26,4 +26,4 @@ const crimeReportSchema = new mongoose.Schema({
 
 const CrimeReportModel = mongoose.model("CrimeReports", crimeReportSchema);
 
-module.exports = { CrimeReportModel };
+module.exports = {CrimeReportModel} ;

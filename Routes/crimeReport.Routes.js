@@ -2,7 +2,8 @@ const express = require("express")
 
 const { AuthenticationMW } = require("../Middleware/Auth.middleware")
 const { UserModel } = require("../Models/user.model")
-const { CrimeReportModel } = require("../Models/crimeReport.model")
+
+const {CrimeReportModel} = require("../Models/CrimeReport.model")
 
 const CrimeReportRouter = express.Router()
 
