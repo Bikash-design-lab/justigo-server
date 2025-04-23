@@ -1,5 +1,4 @@
 const mongoose = require("mongoose");
-
 const crimeReportSchema = new mongoose.Schema({
         reportedBy: { type: mongoose.Schema.Types.ObjectId, ref: "Users", required: true },
         incidentType: { type: String, required: true },
@@ -23,7 +22,5 @@ const crimeReportSchema = new mongoose.Schema({
     },
     {timestamps: true,versionKey: false}
 );
-
 const CrimeReportModel = mongoose.model("CrimeReports", crimeReportSchema);
-
 module.exports = {CrimeReportModel} ;
