@@ -15,7 +15,7 @@ const crimeReportSchema = new mongoose.Schema({
         }],
         hearingRecords: [{date: { type: Date, required: true },notes: { type: String },audioFile: { type: String },isFinalHearing: { type: Boolean, default: false }}],
         verdict: {judgeName: { type: String },decision: { type: String },reasoning: { type: String },decisionDate: { type: Date }},
-        status: {type: String,enum: ["Pending", "Under Investigation", "Closed"],default: "Pending"},
+        status: {type: String,enum: ["Under Investigation", "Pending", "Under Appeal", "In Court", "Closed"],default: "Pending"},
         caseComplexity: { type: String }, // could be enum too: Low | Medium | High
         aiPrediction: { type: String },
         shareLinks: {public: { type: String },private: { type: String }}
